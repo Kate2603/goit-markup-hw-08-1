@@ -1,0 +1,95 @@
+//0-767-mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .hero {
+        padding: 118px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .background {
+        background-color: var(--ninth-background);
+        background-size: cover;
+        background-position: border-box;
+        background-image: var(--bg-gradient), url('../images/bg-mob.jpg');
+        
+        @include retina {
+            background-image: var(--bg-gradient), url('../images/bg-mob-2x.jpg');
+        }
+    }
+
+    .hero-title {
+        @include font (900, 26px, 42px);
+    
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--third-text-color);
+        margin-bottom: 30px;
+    }
+
+    .modal-btn-container {
+        padding-top: 30px;
+        padding-bottom: 200px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+        .modal-btn {
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 32px;
+        padding-right: 32px;
+    
+        @include font (700, 16px, 30px);
+    
+        @extend %align;
+    
+        letter-spacing: 0.06em;
+        color: var(--third-text-color);
+        background-color: var(--third-background);
+        border: none;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: background-color var(--transition-duration-and-func);
+    
+        &:hover,
+        &:focus {
+            background-color: var(--sixth-background);
+        }
+    }
+}
+
+//768px-tablet
+@media screen and (min-width: 768px) {
+    .background {
+        background-image: var(--bg-gradient), url('../images/bg-tab.jpg');
+        
+        @include retina {
+            background-image: var(--bg-gradient), url('../images/bg-tab-2x.jpg');
+        }
+    }
+}
+
+//1200px-dekstop
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding: 200px 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .background {
+        background-image: var(--bg-gradient), url('../images/bg.jpg');
+        
+        @include retina {
+            background-image: var(--bg-gradient), url('../images/bg-2x.jpg');
+        }
+    }
+
+    .hero-title {
+        @include font (900, 44px, 60px);
+        text-align: center;
+    }
+}
