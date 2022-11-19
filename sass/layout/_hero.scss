@@ -71,48 +71,48 @@
 }
 
 .titile1 {
-    white-space: break-spaces;
+    white-space: pre;
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: none;
     }
 }
 
 .titile2 {
-    white-space: break-spaces;
+    white-space: pre;
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: none;
     }
 }
 
 .titile3 {
     @media screen and (min-width: 768px) {
-        display: block;
+        display: none;
     }
 }
 
 
 .titile4 {
-    display: block;
+    display: none;
 
     @media screen and (min-width: 768px) {
         display: inline;
-        white-space: break-spaces;
+        white-space: pre;
     }
 }
 
 .titile5 {
-    display: block;
+    display: none;
 
     @media screen and (min-width: 768px) {
         display: inline;
-        white-space: break-spaces;
+        white-space: pre;
     }
 }
 
 .titile6 {
-    display: block;
+    display: none;
 
     @media screen and (min-width: 768px) {
         display: inline;
