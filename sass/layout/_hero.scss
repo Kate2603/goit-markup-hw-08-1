@@ -2,21 +2,17 @@
     width: 100%;
     height: 100%;
     text-align: center;
-    padding-top: 118px;
-    @extend %centred;
+    margin-left: auto;
+    margin-right: auto;
 
-    @include contentMedia($tablet) {
+    @media screen and (min-width: 768px) {
         width: $tablet;
         text-align: left;
-        padding-top: 180px;
-        padding-left: 142px;
     }
 
-    @include media($desktop) {
+        @media screen and (min-width: 1200px) {
         width: $desktop;
         text-align: left;
-        padding-top: 180px;
-        padding-left: 142px;
     }
 
 }
@@ -26,25 +22,84 @@
     background-color: $main-bg-color;
     background-size: cover;
     background-position: border-box;
+    background-image: url('./images/hero-mob-1x.jpg');
+    
+        @include retina {
+            background-image: url('./images/hero-mob-2x.jpg');
+        }
+
+        @media screen and (min-width: 768px) {
+        background-image: url('./images/hero-tab-1x.jpg');
+        
+            @include retina {
+                background-image: url('./images/hero-tab-2x.jpg');
+            }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        width: $desktop;
+        background-image: url('./images/hero-1x.jpg');
+        
+            @include retina {
+                background-image: url('./images/hero-2x.jpg');
+            }
+    }
 }
 
 .hero__title {
     @include font (600, 32, 38);
     color: $main-font-color;
+    margin-top: 284px;
     margin-bottom: 25px;
+    margin-left: 36px;
 
 
-    @include contentMedia($tablet) {
+    @media screen and (min-width: 768px) {
         width: $tablet;
         @include font (600, 56, 60);
+        margin-top: 290px;
         margin-bottom: 94px;
+        margin-left: 40px;
     }
 
-    @include media($desktop) {
+    @media screen and (min-width: 1200px) {
         @include font (600, 64, 75);
+        margin-top: 316px;
         margin-bottom: 40px;
+        margin-left: 142px;
     }
 
+}
+
+.form__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 173px;
+    height: 51px;
+    border-radius: 16px;
+    border: none;
+    background-color: $main-btn-color;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 16px 0;
+    @include font (700, 16, 19);
+    text-transform: uppercase;
+    color: $btn-text-color;
+
+    @media screen and (min-width: 768px) {
+        margin-top: 94px;
+        margin-left: 41px;
+        
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 40px;
+        margin-left: 142px;
+    }
 }
 
 
