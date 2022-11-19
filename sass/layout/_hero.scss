@@ -22,27 +22,33 @@
     background-color: $main-bg-color;
     background-size: cover;
     background-position: border-box;
-    background-image: url('./images/hero-mob-1x.jpg');
-    
-        @include retina {
-            background-image: url('./images/hero-mob-2x.jpg');
-        }
+    background-image: url('./images/main/main-hero/mouse-1x.jpg'),
+        url('./images/main/main-hero/headphones-1x.jpg'),
+        url('./images/main/main-hero/pckeyboard-1x.jpg'), url('./images/main/main-hero/hero-mob-1x.jpg');
 
-        @media screen and (min-width: 768px) {
-        background-image: url('./images/hero-tab-1x.jpg');
-        
-            @include retina {
-                background-image: url('./images/hero-tab-2x.jpg');
-            }
+    @include retina {
+        background-image: url('./images/main/main-hero/mouse-2x.jpg'),
+            url('./images/main/main-hero/headphones-2x.jpg'),
+            url('./images/main/main-hero/pckeyboard-2x.jpg'), url('./images/main/main-hero/hero-mob-2x.jpg');
     }
-    
+
+    @media screen and (min-width: 768px) {
+        background-image: url('./images/main/main-hero/mouse-1x.jpg'),
+            url('./images/main/main-hero/headphones-1x.jpg'),
+            url('./images/main/main-hero/pckeyboard-1x.jpg'), url('./images/main/main-hero/hero-tab-1x.jpg');
+
+        @include retina {
+            background-image: url('./images/main/main-hero/mouse-2x.jpg'), url('./images/main/main-hero/headphones-2x.jpg'),url('./images/main/main-hero/pckeyboard-2x.jpg'), url('./images/main/main-hero/hero-tab-2x.jpg');
+        }
+    }
+
     @media screen and (min-width: 1200px) {
         width: $desktop;
-        background-image: url('./images/hero-1x.jpg');
-        
-            @include retina {
-                background-image: url('./images/hero-2x.jpg');
-            }
+        background-image:  url('./images/main/main-hero/mouse-1x.jpg'), url('./images/main/main-hero/headphones-1x.jpg'), url('./images/main/main-hero/pckeyboard-1x.jpg'), url('./images/main/main-hero/hero-1x.jpg');
+
+        @include retina {
+            background-image: url('./images/main/main-hero/mouse-2x.jpg'), url('./images/main/main-hero/headphones-2x.jpg'), url('./images/main/main-hero/pckeyboard-2x.jpg'), url('./images/main/main-hero/hero-2x.jpg');
+        }
     }
 }
 
@@ -74,7 +80,7 @@
     word-break: normal;
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: none;
     }
 }
 
@@ -82,19 +88,19 @@
     word-break: normal;
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: none;
     }
 }
 
 .titile3 {
     @media screen and (min-width: 768px) {
-        display: block;
+        display: none;
     }
 }
 
 
 .titile4 {
-    display: block;
+    display: none;
 
     @media screen and (min-width: 768px) {
         word-break: normal;
@@ -103,7 +109,7 @@
 }
 
 .titile5 {
-    display: block;
+    display: none;
 
     @media screen and (min-width: 768px) {
         word-break: normal;
@@ -112,7 +118,7 @@
 }
 
 .titile6 {
-    display: block;
+    display: none;
 
     @media screen and (min-width: 768px) {
         word-break: normal;
@@ -163,3 +169,18 @@
 //  @include media($desktop) {
 //      width: $desktop;
 //  }
+
+.canvas {
+    max-width: 1000px;
+    height: 400px;
+
+    background-image: url("https://cdn-icons-png.flaticon.com/512/361/361678.png"),
+        url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"),
+        url("https://cdn-icons-png.flaticon.com/512/814/814513.png"), url('https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/256/61.webp'),
+        url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+
+    background-size: 80px, 100px, 150px, 130px, cover;
+    background-repeat: no-repeat;
+    background-position: top 120px right 130px, top 270px left 130px, center, 100px 60px,
+        center;
+}

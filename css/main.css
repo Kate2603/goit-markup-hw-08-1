@@ -95,32 +95,32 @@ a {
   background-color: #01383a;
   background-size: cover;
   background-position: border-box;
-  background-image: url("./images/hero-mob-1x.jpg");
+  background-image: url("./images/main/main-hero/mouse-1x.jpg"), url("./images/main/main-hero/headphones-1x.jpg"), url("./images/main/main-hero/pckeyboard-1x.jpg"), url("./images/main/main-hero/hero-mob-1x.jpg");
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .background {
-    background-image: url("./images/hero-mob-2x.jpg");
+    background-image: url("./images/main/main-hero/mouse-2x.jpg"), url("./images/main/main-hero/headphones-2x.jpg"), url("./images/main/main-hero/pckeyboard-2x.jpg"), url("./images/main/main-hero/hero-mob-2x.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .background {
-    background-image: url("./images/hero-tab-1x.jpg");
+    background-image: url("./images/main/main-hero/mouse-1x.jpg"), url("./images/main/main-hero/headphones-1x.jpg"), url("./images/main/main-hero/pckeyboard-1x.jpg"), url("./images/main/main-hero/hero-tab-1x.jpg");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .background {
-    background-image: url("./images/hero-tab-2x.jpg");
+    background-image: url("./images/main/main-hero/mouse-2x.jpg"), url("./images/main/main-hero/headphones-2x.jpg"), url("./images/main/main-hero/pckeyboard-2x.jpg"), url("./images/main/main-hero/hero-tab-2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .background {
     width: 1280px;
-    background-image: url("./images/hero-1x.jpg");
+    background-image: url("./images/main/main-hero/mouse-1x.jpg"), url("./images/main/main-hero/headphones-1x.jpg"), url("./images/main/main-hero/pckeyboard-1x.jpg"), url("./images/main/main-hero/hero-1x.jpg");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .background {
-    background-image: url("./images/hero-2x.jpg");
+    background-image: url("./images/main/main-hero/mouse-2x.jpg"), url("./images/main/main-hero/headphones-2x.jpg"), url("./images/main/main-hero/pckeyboard-2x.jpg"), url("./images/main/main-hero/hero-2x.jpg");
   }
 }
 
@@ -160,7 +160,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .titile1 {
-    display: block;
+    display: none;
   }
 }
 
@@ -169,18 +169,18 @@ a {
 }
 @media screen and (min-width: 768px) {
   .titile2 {
-    display: block;
+    display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
   .titile3 {
-    display: block;
+    display: none;
   }
 }
 
 .titile4 {
-  display: block;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .titile4 {
@@ -190,7 +190,7 @@ a {
 }
 
 .titile5 {
-  display: block;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .titile5 {
@@ -200,7 +200,7 @@ a {
 }
 
 .titile6 {
-  display: block;
+  display: none;
 }
 @media screen and (min-width: 768px) {
   .titile6 {
@@ -248,4 +248,13 @@ a {
     margin-top: 40px;
     margin-left: 142px;
   }
+}
+
+.canvas {
+  max-width: 1000px;
+  height: 400px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/361/361678.png"), url("https://cdn-icons-png.flaticon.com/512/4206/4206277.png"), url("https://cdn-icons-png.flaticon.com/512/814/814513.png"), url("https://tlgrm.ru/_/stickers/e3a/876/e3a87689-707f-3495-b94a-8ee96e2538e5/256/61.webp"), url("https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg");
+  background-size: 80px, 100px, 150px, 130px, cover;
+  background-repeat: no-repeat;
+  background-position: top 120px right 130px, top 270px left 130px, center, 100px 60px, center;
 }/*# sourceMappingURL=main.css.map */
