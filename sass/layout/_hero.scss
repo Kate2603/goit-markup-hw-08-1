@@ -71,50 +71,51 @@
 }
 
 .titile1 {
-    white-space: pre;
+    word-break: normal;
 
     @media screen and (min-width: 768px) {
-        display: none;
+        display: block;
     }
 }
 
 .titile2 {
-    white-space: pre;
+    word-break: normal;
 
     @media screen and (min-width: 768px) {
-        display: none;
+        display: block;
     }
 }
 
 .titile3 {
     @media screen and (min-width: 768px) {
-        display: none;
+        display: block;
     }
 }
 
 
 .titile4 {
-    display: none;
+    display: block;
 
     @media screen and (min-width: 768px) {
+        word-break: normal;
         display: inline;
-        white-space: pre;
     }
 }
 
 .titile5 {
-    display: none;
+    display: block;
 
     @media screen and (min-width: 768px) {
+        word-break: normal;
         display: inline;
-        white-space: pre;
     }
 }
 
 .titile6 {
-    display: none;
+    display: block;
 
     @media screen and (min-width: 768px) {
+        word-break: normal;
         display: inline;
     }
 }

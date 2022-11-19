@@ -156,54 +156,55 @@ a {
 }
 
 .titile1 {
-  white-space: pre;
+  word-break: normal;
 }
 @media screen and (min-width: 768px) {
   .titile1 {
-    display: none;
+    display: block;
   }
 }
 
 .titile2 {
-  white-space: pre;
+  word-break: normal;
 }
 @media screen and (min-width: 768px) {
   .titile2 {
-    display: none;
+    display: block;
   }
 }
 
 @media screen and (min-width: 768px) {
   .titile3 {
-    display: none;
+    display: block;
   }
 }
 
 .titile4 {
-  display: none;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .titile4 {
+    word-break: normal;
     display: inline;
-    white-space: pre;
   }
 }
 
 .titile5 {
-  display: none;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .titile5 {
+    word-break: normal;
     display: inline;
-    white-space: pre;
   }
 }
 
 .titile6 {
-  display: none;
+  display: block;
 }
 @media screen and (min-width: 768px) {
   .titile6 {
+    word-break: normal;
     display: inline;
   }
 }
