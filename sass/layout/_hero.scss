@@ -25,16 +25,16 @@
     background-position: top 87px,  top -48px, top 394pc, center;
     transform: rotate(-29deg), rotate(28deg), rotate(24deg), center;
     background-image: 
-        url('../images/main/main-hero/mouse-1x.jpg'),
-        url('../images/main/main-hero/headphones-1x.jpg'),
-        url('../images/main/main-hero/pckeyboard-1x.jpg'), 
+        url('../images/main/main-hero/mouse-1x.png'),
+        url('../images/main/main-hero/headphones-1x.png'),
+        url('../images/main/main-hero/pckeyboard-1x.png'), 
         url('../images/main/main-hero/hero-mob-1x.jpg');
 
     @include retina {
         background-image: 
-            url('../images/main/main-hero/mouse-2x.jpg'),
-            url('../images/main/main-hero/headphones-2x.jpg'),
-            url('../images/main/main-hero/pckeyboard-2x.jpg'), 
+            url('../images/main/main-hero/mouse-2x.png'),
+            url('../images/main/main-hero/headphones-2x.png'),
+            url('../images/main/main-hero/pckeyboard-2x.png'), 
             url('../images/main/main-hero/hero-mob-2x.jpg');
     }
 
@@ -44,16 +44,16 @@
         background-position: top 68.87px, top 193px, top 446px, center;
         transform: rotate(-31.92deg), rotate(10.77deg), rotate(21.68deg), center;
         background-image: 
-            url('../images/main/main-hero/mouse-1x.jpg'),
-            url('../images/main/main-hero/headphones-1x.jpg'),
-            url('../images/main/main-hero/pckeyboard-1x.jpg'), 
+            url('../images/main/main-hero/mouse-1x.png'),
+            url('../images/main/main-hero/headphones-1x.png'),
+            url('../images/main/main-hero/pckeyboard-1x.png'), 
             url('../images/main/main-hero/hero-tab-1x.jpg');
 
         @include retina {
             background-image: 
-                url('../images/main/main-hero/mouse-2x.jpg'), 
-                url('../images/main/main-hero/headphones-2x.jpg'),
-                url('../images/main/main-hero/pckeyboard-2x.jpg'), 
+                url('../images/main/main-hero/mouse-2x.png'), 
+                url('../images/main/main-hero/headphones-2x.png'),
+                url('../images/main/main-hero/pckeyboard-2x.png'), 
                 url('../images/main/main-hero/hero-tab-2x.jpg');
         }
     }
@@ -64,16 +64,16 @@
         background-position: top 74.37px, top 85.37px, top 361.37px, center;
         transform: rotate(-34deg), rotate(18deg), rotate(30deg), center;
         background-image:  
-            url('../images/main/main-hero/mouse-1x.jpg'), 
-            url('../images/main/main-hero/headphones-1x.jpg'), 
-            url('../images/main/main-hero/pckeyboard-1x.jpg'), 
+            url('../images/main/main-hero/mouse-1x.png'), 
+            url('../images/main/main-hero/headphones-1x.png'), 
+            url('../images/main/main-hero/pckeyboard-1x.png'), 
             url('../images/main/main-hero/hero-1x.jpg');
 
         @include retina {
             background-image: 
-                url('../images/main/main-hero/mouse-2x.jpg'), 
-                url('../images/main/main-hero/headphones-2x.jpg'), 
-                url('../images/main/main-hero/pckeyboard-2x.jpg'), 
+                url('../images/main/main-hero/mouse-2x.png'), 
+                url('../images/main/main-hero/headphones-2x.png'), 
+                url('../images/main/main-hero/pckeyboard-2x.png'), 
                 url('../images/main/main-hero/hero-2x.jpg');
         }
     }
