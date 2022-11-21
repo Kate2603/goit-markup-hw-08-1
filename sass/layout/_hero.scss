@@ -2,7 +2,7 @@
     padding: 0;
 }
 
-.hero{
+.hero {
     width: 320px;
     height: 100vh;
     text-align: center;
@@ -12,70 +12,112 @@
     @media screen and (min-width: 480px) {
         width: $mobile;
     }
-    
+
     @media screen and (min-width: 768px) {
         width: $tablet;
         text-align: left;
-        padding-top: 290px;
-        padding-left: 40px;
+        padding-top: 190px;
+        padding-left: 20px;
     }
 
     @media screen and (min-width: 1280px) {
         width: $desktop;
-        padding-top: 316px;
-        padding-left: 142px;
+        padding-top: 280px;
+        padding-left: 110px;
     }
 }
 
 .background {
     width: 100vw;
-    height: 100vh;
+    height: 100hw;
     background-color: transparent;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-image: url('../images/main/hero-mob-1x.webp');
+    background-size: 60px 99px, 150px 186px, 88px 42px, cover;
+    transform: rotate(-29deg), rotate(28deg), rotate(24deg), 0;
+    background-position: 162px 16px, 56px 140px, 394px 150px, center;
+    background-image:
+        url('../images/main/mouse-1x.webp'),
+        url('../images/main/headphones-1x.webp'),
+        url('../images/main/pckeyboard-1x.webp'),
+        url('../images/main/hero-mob-1x.webp');
 
     @include retina {
-        background-image: url('../images/main/hero-mob-2x.webp');
+        background-image:
+            url('../images/main/mouse-2x.webp'),
+            url('../images/main/headphones-2x.webp'),
+            url('../images/main/pckeyboard-2x.webp'),
+            url('../images/main/hero-mob-2x.webp');
     }
 
     @media screen and (min-width: 768px) {
-        background-image: url('../images/main/hero-tab-1x.webp');
+        width: 100vw;
+        height: 100hw;
+        background-size: 100px 165px, 180px 223px, 143px 69px, cover;
+        transform: rotate(-31.92deg), rotate(10.77deg), rotate(21.68deg), 0;
+        background-position: 41px 68.87px, 195px 400px, 615px 421px, center;
+        background-image:
+            url('../images/main/mouse-1x.webp'),
+            url('../images/main/headphones-1x.webp'),
+            url('../images/main/pckeyboard-1x.webp'),
+            url('../images/main/hero-tab-1x.webp');
 
         @include retina {
-            background-image: url('../images/main/hero-tab-2x.webp');
-        }   
-    }
-
-    @media screen and (min-width: 1280px) {
-        filter: drop-shadow(0px 4px 25px #5EEC36);
-        background-image: url('../images/main/hero-1x.webp');
-
-        @include retina {
-            background-image: url('../images/main/hero-2x.webp');
+            background-image:
+                url('../images/main/mouse-2x.webp'),
+                url('../images/main/headphones-2x.webp'),
+                url('../images/main/pckeyboard-2x.webp'),
+                url('../images/main/hero-tab-2x.webp');
         }
     }
-    
+
+    @media screen and (min-width: 1200px) {
+        width: $desktop;
+        // mix-blend-mode: luminosity;
+        // opacity: 0.25;
+        // filter: drop-shadow(0px 4px 25px #5EEC36);
+        background-size: 133px 220px, 270px 335px, 230px 111px, cover;
+        transform: rotate(-34deg), rotate(18deg), rotate(30deg), 0;
+        background-position: 205px 589px, 300px 829px, 567px 578px, center;
+        background-image:
+            url('../images/main/mouse-1x.webp'),
+            url('../images/main/headphones-1x.webp'),
+            url('../images/main/pckeyboard-1x.webp'),
+            url('../images/main/hero-1x.webp');
+
+        @include retina {
+            background-image:
+                url('../images/main/mouse-2x.webp'),
+                url('../images/main/headphones-2x.webp'),
+                url('../images/main/pckeyboard-2x.webp'),
+                url('../images/main/hero-2x.webp');
+        }
+    }
 }
 
-.hero__title {
-    @include font (800, 32px, 38px);
+.title {
+    width: 270px;
+    height: 114px;
+    @include font (600, 32px, 38px);
     color: $main-font-color;
-    letter-spacing: 0.06em;
-    word-spacing: 0.06em;
-    
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width: 768px) {
-        @include font (800, 56px, 60px);
+        width: 399px;
+        height: 198px;
+        @include font (600, 56px, 60px);
+        margin-left: 20px;
+        margin-right: auto;
     }
 
     @media screen and (min-width: 1280px) {
-        @include font (800, 64px, 75px);
+        width: 515px;
+        height: 225px;
+        @include font (600, 64px, 75px);
     }
 }
 
-.titile__1 {
+.titile-one {
     display: inline;
 
     @media screen and (min-width: 768px) {
@@ -83,7 +125,7 @@
     }
 }
 
-.titile__2 {
+.titile-two {
     display: none;
 
     @media screen and (min-width: 768px) {
@@ -91,7 +133,7 @@
     }
 }
 
-.form__btn {
+.link {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -107,17 +149,26 @@
     margin-top: 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 102px;
     @include font (700, 16px, 19px);
     text-transform: uppercase;
     color: $btn-text-color;
 
     @media screen and (min-width: 768px) {
-        margin-top: 94px;
-        margin-left: 41px;
-}
+        @include font (700, 18px, 21px);
+        width: 173px;
+        height: 51px;
+        margin-top: 64px;
+        margin-left: 20px;
+        margin-bottom: 128px;
+    }
 
     @media screen and (min-width: 1280px) {
+        @include font (700, 28px, 30px);
+        width: 306px;
+        height: 70px;
         margin-top: 40px;
-        margin-left: 142px;
+        margin-left: 50px;
+        margin-bottom: 209px;
     }
 }
