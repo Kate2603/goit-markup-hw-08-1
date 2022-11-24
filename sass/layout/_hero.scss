@@ -79,15 +79,14 @@
     padding-top: 284px;
     padding-left: auto;
     padding-right: auto;
-
+    
     @media screen and (min-width: 768px) {
         @include font (600, 56px, 60px);
         padding-top: 290px;
         padding-left: 40px;
     }
-
+    
     @media screen and (min-width: 1280px) {
-
         @include font (600, 64px, 75px);
         padding-top: 316px;
         padding-left: 142px;
@@ -118,6 +117,7 @@
     height: 51px;
     border-radius: 16px;
     border: none;
+    cursor: pointer;
     background-color: $main-btn-color;
 
     padding: 16px 0;

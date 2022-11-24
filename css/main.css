@@ -196,6 +196,7 @@ a {
   height: 51px;
   border-radius: 16px;
   border: none;
+  cursor: pointer;
   background-color: #86E543;
   padding: 16px 0;
   margin-top: 25px;
