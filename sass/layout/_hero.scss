@@ -2,7 +2,6 @@
     width: 320px;
     height: 100vh;
     text-align: center;
-    position: relative;
 
     @media screen and (min-width: 480px) {
         width: $mobile;
@@ -21,7 +20,6 @@
 .hero__background {
     width: 100vw;
     height: 100vh;
-    position: fixed;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: cover;
@@ -30,71 +28,69 @@
         url('../images/main/hero-mob-1x.png');
 
     @media screen and (min-device-pixel-ratio: 2),
-        screen and (-webkit-min-device-pixel-ratio: 2),
-        screen and (min-resolution: 192dpi),
-        screen and (min-resolution: 2dppx) {
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
         background-image:
             url('../images/main/hero-mob-2x.png');
     }
 
     @media screen and (min-width: 768px) {
+        width: 100vw;
+        height: 100vh;
         background-size: cover;
         background-position: center;
         background-image:
             url('../images/main/hero-tab-1x.png');
 
         @media screen and (min-device-pixel-ratio: 2),
-            screen and (-webkit-min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
             background-image:
                 url('../images/main/hero-tab-2x.png');
         }
     }
 
     @media screen and (min-width: 1200px) {
+        width: 100vw;
+        height: 100vh;
         width: $desktop;
         background-size: cover;
-        background-position:center;
+        background-position: center;
         background-image:
-            url('../images/main/hero-desk1-1x.png'),
-            url('../images/main/hero-desk2-1x.png');
+            url('../images/main/hero-vector-desk1-1x.png'),
+            url('../images/main/hero-bg-desk1-1x.png');
 
         @media screen and (min-device-pixel-ratio: 2),
-            screen and (-webkit-min-device-pixel-ratio: 2),
-            screen and (min-resolution: 192dpi),
-            screen and (min-resolution: 2dppx) {
+        screen and (-webkit-min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
             background-image:
-                url('../images/main/hero-desk1-2x.png'),
-                url('../images/main/hero-desk2-2x.png');
+                url('../images/main/hero-vector-desk2-2x.png'),
+                url('../images/main/hero-bg-desk2-2x.png');
         }
     }
 }
 
 .title-hero {
-    width: 270px;
-    height: 114px;
     @include font (600, 32px, 38px);
-    position: absolute;
     color: $main-font-color;
-    top: 284px;
-    left: auto;
-    right: auto;
+    padding-top: 284px;
+    padding-left: auto;
+    padding-right: auto;
 
     @media screen and (min-width: 768px) {
-        width: 399px;
-        height: 198px;
         @include font (600, 56px, 60px);
-        top: 290px;
-        left: 40px;
+        padding-top: 290px;
+        padding-left: 40px;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 515px;
-        height: 225px;
+
         @include font (600, 64px, 75px);
-        top: 316px;
-        left: 142px;
+        padding-top: 316px;
+        padding-left: 142px;
     }
 }
 
@@ -118,7 +114,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 173px;
     height: 51px;
     border-radius: 16px;
@@ -126,29 +121,27 @@
     background-color: $main-btn-color;
 
     padding: 16px 0;
-    top: 423px;
-    left: auto;
-    right: auto;
-    bottom: 173px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 102px;
     @include font (700, 16px, 19px);
     text-transform: uppercase;
     color: $btn-text-color;
 
     @media screen and (min-width: 768px) {
         @include font (700, 18px, 21px);
-        width: 173px;
-        height: 51px;
-        top: 582px;
-        left: 41px;
-        bottom: 208px;
+        width: 306px;
+        height: 70px;
+        margin-top: 94px;
+        margin-left: 41px;
+        margin-bottom: 128px;
     }
 
     @media screen and (min-width: 1280px) {
         @include font (700, 28px, 30px);
-        width: 306px;
-        height: 70px;
-        top: 581px;
-        left: 142px;
-        bottom: 209px;
+        margin-top: 40px;
+        margin-left: 142px;
+        margin-bottom: 209px;
     }
 }

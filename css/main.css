@@ -74,7 +74,6 @@ a {
   width: 320px;
   height: 100vh;
   text-align: center;
-  position: relative;
 }
 @media screen and (min-width: 480px) {
   .hero {
@@ -96,7 +95,6 @@ a {
 .hero__background {
   width: 100vw;
   height: 100vh;
-  position: fixed;
   background-color: transparent;
   background-repeat: no-repeat;
   background-size: cover;
@@ -110,6 +108,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .hero__background {
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     background-position: center;
     background-image: url("../images/main/hero-tab-1x.png");
@@ -122,50 +122,45 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero__background {
+    width: 100vw;
+    height: 100vh;
     width: 1280px;
     background-size: cover;
     background-position: center;
-    background-image: url("../images/main/hero-desk1-1x.png"), url("../images/main/hero-desk2-1x.png");
+    background-image: url("../images/main/hero-vector-desk1-1x.png"), url("../images/main/hero-bg-desk1-1x.png");
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero__background {
-    background-image: url("../images/main/hero-desk1-2x.png"), url("../images/main/hero-desk2-2x.png");
+    background-image: url("../images/main/hero-vector-desk2-2x.png"), url("../images/main/hero-bg-desk2-2x.png");
   }
 }
 
 .title-hero {
-  width: 270px;
-  height: 114px;
   font-weight: 600;
   font-size: 32px;
   line-height: 1.1875;
-  position: absolute;
   color: #ffffff;
-  top: 284px;
-  left: auto;
-  right: auto;
+  padding-top: 284px;
+  padding-left: auto;
+  padding-right: auto;
 }
 @media screen and (min-width: 768px) {
   .title-hero {
-    width: 399px;
-    height: 198px;
     font-weight: 600;
     font-size: 56px;
     line-height: 1.0714285714;
-    top: 290px;
-    left: 40px;
+    padding-top: 290px;
+    padding-left: 40px;
   }
 }
 @media screen and (min-width: 1280px) {
   .title-hero {
-    width: 515px;
-    height: 225px;
     font-weight: 600;
     font-size: 64px;
     line-height: 1.171875;
-    top: 316px;
-    left: 142px;
+    padding-top: 316px;
+    padding-left: 142px;
   }
 }
 
@@ -197,17 +192,16 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   width: 173px;
   height: 51px;
   border-radius: 16px;
   border: none;
   background-color: #86E543;
   padding: 16px 0;
-  top: 423px;
-  left: auto;
-  right: auto;
-  bottom: 173px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 102px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.1875;
@@ -219,11 +213,11 @@ a {
     font-weight: 700;
     font-size: 18px;
     line-height: 1.1666666667;
-    width: 173px;
-    height: 51px;
-    top: 582px;
-    left: 41px;
-    bottom: 208px;
+    width: 306px;
+    height: 70px;
+    margin-top: 94px;
+    margin-left: 41px;
+    margin-bottom: 128px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -231,10 +225,8 @@ a {
     font-weight: 700;
     font-size: 28px;
     line-height: 1.0714285714;
-    width: 306px;
-    height: 70px;
-    top: 581px;
-    left: 142px;
-    bottom: 209px;
+    margin-top: 40px;
+    margin-left: 142px;
+    margin-bottom: 209px;
   }
 }/*# sourceMappingURL=main.css.map */
